@@ -10,7 +10,8 @@ app.use(express.json());
 
 mongoose
   .connect(
-    process.env.MONGO_URI || "mongodb://localhost:27017/",  // <-- fallback local DB
+    process.env.MONGO_URI || 'mongodb+srv://shardulschatufale:IKdjjMxwnPMNFCSy@cluster0.w686kdy.mongodb.net/assignment?retryWrites=true&w=majority'
+,  // <-- fallback local DB
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
